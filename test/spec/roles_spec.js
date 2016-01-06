@@ -42,7 +42,7 @@
               .end(function(err, res) {
                 expect(res.status).toEqual(200);
                 expect(res.body.code).toBe(11000);
-                expect(res.body.errmsg).toBe('E11000 duplicate key error index: demoDb.roles.$title_1 dup key: { : \"user\" }');
+                expect(res.body.errmsg).toBe('E11000 duplicate key error index: docsys.roles.$title_1 dup key: { : \"user\" }');
                 done();
               });
           });
