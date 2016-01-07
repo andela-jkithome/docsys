@@ -161,6 +161,7 @@
     // Find a single document
     find: function(req, res) {
       Document.findById(req.params.id, function(err, document) {
+        console.log(document);
         if (err) {
           res.status(500).send(err);
         } else {
